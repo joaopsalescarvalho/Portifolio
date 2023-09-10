@@ -71,6 +71,7 @@ header{
    border-radius: 40px; 
    padding: 4px;
    background-color: rgba(0, 0, 0, 0.575) ;
+   scale: 1.2;
 }
 .switch-button::before{
     content: 'dark_mode';
@@ -81,7 +82,7 @@ header{
     transition: 0.4s all ease;
 }
 input:checked + .switch-button{
-    background-color:rgba(255, 255, 255, 0.637);
+    background-color:rgba(255, 255, 255, 0.404);
 }
 input:checked + .switch-button::before{
     transform: translateX(26px);
