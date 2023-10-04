@@ -145,6 +145,9 @@ main{
     justify-content: center;
     align-items: center;
 }
+.contato{
+    text-align: center;
+}
 .line{
     border-right: 2px solid var(--corfonte)0.74;
     font-family: monospace;
@@ -196,6 +199,7 @@ main{
     left: 5%;
 }
 .projeto{
+    
     margin-top: 50px;
     width: 500px;
 }
