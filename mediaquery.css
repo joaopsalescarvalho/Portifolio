@@ -30,25 +30,56 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        top: 70%;
     }
-    .imgperfil{
+    .shadow{
+        display: none;
+    }
+    .img-home{
+        background-image: url('imagens/Jellal_fernandes_render_by_annaeditions24-d6kl1bk.png');
+
         width: 300px; 
-        margin: 50px 0;
+        height: 300px;
+        translate: 0% -50%;
     }
-    .direita{
-       left: 85%;
+    .info-home{
+        translate: 0% 0%;
+    }
+    .btn-open-project-conteiner{
+        bottom: -80%;
+    }
+    .style-conteiner{
+        width: 500px;
     }
     .projetos-conteiner{
-        display: flex;
+        display: none;
        justify-content: center;
         top: 20%;
-        left: 5%;
+        left: 0%;
+        margin-top: 150px;
+    }
+    .border-circulo{
+        top: -15%;
+        left: -15%;
+    }
+    .border-ponta1{
+        top: -55%;
+        left: 90%;
+    }
+    .border-ponta2{
+        top: 34%;
+        left: 90%;
+    }
+    .border-ponta3{
+        top: 0%;
+        left: -15%;
     }
     .projeto{
-        width: 90vw;
+        width: 400px;
+        height: 300px;
     }
     .imgprojeto{
-        width: 90vw;
+        width: 250px;
     }
 }
 @media screen and (min-width: 700px) and (max-width: 992px){
@@ -59,7 +90,7 @@
         align-items: center;
         text-align: center;
     }
-    .imgperfil{
+    .img-home{
         width: 500px; 
         margin: 50px 0;
     }
@@ -69,15 +100,6 @@
         top: 20%;
         left: 5%;
     }
-    .esquerdacima{
-        left: -225px;
-    }
-    .cima{
-        left: 0%;
-    }
-    .direita{
-        left: 52%;
-     }
     .projeto{
         width: 600px ;
     }
