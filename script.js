@@ -14,14 +14,14 @@ const shadow=document.querySelector('.shadow')
 function moveForRight(){
 
     imgHome.style.transform='translateX(-50%)';
-    shadow.style.transform='translateX(-30%) rotatey(180deg)';
+    shadow.style.transform='translateX(-30%) rotateY(180deg)';
     shadow.style.right='560px';
     shadow.style.boxShadow='inset 10px 10px 400px #48cae4b4';
     shadow.style.width='290px';
 
 setTimeout(()=>{
     imgHome.style.transform='translateX(0%)';
-    shadow.style.transform='translateX(50%) rotatey(180deg)';
+    shadow.style.transform='translateX(50%) rotateY(180deg)';
     shadow.style.right='380px';
     shadow.style.boxShadow='inset 0px 0px 0px #0096C7';
     shadow.style.width='0';
@@ -39,7 +39,7 @@ buttonOpenProjects.addEventListener('click',()=>{
     buttonBackToTop.style.display='none';
     projetosConteiner.style.display='flex';
     setTimeout(()=>{
-    projetosConteiner.style.top='-90%';
+    projetosConteiner.style.top='-100%';
     window.scrollTo(0,0)
     },1)
     setTimeout(()=>{
@@ -69,21 +69,44 @@ const btnTec= document.querySelectorAll('.btntec')
 const btnDesc= document.querySelectorAll('.btndesc')
 const screenTec= document.querySelectorAll('.tec')
 const screenDesc= document.querySelectorAll('.desc')
+const body=document.querySelector('body');
 
-for(let i=0 ;i < 10 ;i++){
+for(let i=0 ;i < 8 ;i++){
     btnDesc[i].addEventListener('click',()=>{
-    screenDesc[i].style.display="block";
-    screenTec[i].style.display="none"; 
-    }
-    )
+        screenDesc[i].style.display="block";
+        btnDesc[i].style.border="2px solid #48cae4";
+        screenTec[i].style.display="none"; 
+        btnTec[i].style.border="1px solid #0096C7";
+
+    screenDesc[i].addEventListener('mouseleave',()=>{
+        const screen=visualViewport.width;
+        console.log(screen)
+        if(screen <= 400){
+        screenDesc[i].style.display= "none";
+        }
+        })
+        
+    })
+    
 }
 
-for(let i=0 ;i < 10 ;i++){
+for(let i=0 ;i < 8 ;i++){
     btnTec[i].addEventListener('click',()=>{
-    screenDesc[i].style.display="none";
-    screenTec[i].style.display="block"; 
-    }
-    )
+        screenDesc[i].style.display="none";
+        btnDesc[i].style.border="1px solid #0096C7";
+        screenTec[i].style.display="block"; 
+        btnTec[i].style.border="2px solid #48cae4"; 
+
+    screenTec[i].addEventListener('mouseleave',()=>{
+        const screen=visualViewport.width;
+        console.log(screen)
+        if(screen <= 400){
+        screenTec[i].style.display= "none";
+        }
+    })
+        
+    })
+
 }
 
 /*animação openinfoperfil*/
@@ -139,3 +162,5 @@ function closePerfil(){
         perfil.style.display='none'
 },0)
 }
+
+window.onload = widthVerify

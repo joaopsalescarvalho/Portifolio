@@ -1,12 +1,8 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family:'YellowMagician';
-    src: url(./Yellow-Magician/YellowMagician.ttf) format("truetype");
-}
-@font-face {
     font-family:'tec';
-    src: url(./aldo_the_apache/AldotheApache.ttf) format("truetype");
+    src: url(./font\ tec/AldotheApache.ttf) format("truetype");
 }
 
 *{  
@@ -147,27 +143,31 @@ main{
 .info-home{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    translate: 0% -50%;
+    width: 500px;
+    height: 100px;
+    translate: 0% -80%;
 }
 .letreiro{
-    translate: 0% -200%;
+    translate: 0% -450%;
 }
 .line{
     border-right: 2px solid var(--corfonte)0.74;
     font-family:  monospace;
-    margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
 }   
 .typing-animation{
     animation: blinkcursor 500ms steps(40) infinite normal,typing 3s steps(40) 1s normal both;
 }
+.letreiro>p{
+    font-family: 'tec',Arial, Helvetica, sans-serif;
+}
 .perfil-conteiner{
     position: absolute;
     margin-top: 90px;
-    background-image: url('pngtree-abstract-technology-background-technical-electric-image_443494.jpg');
+    background-image: url('imagens/backgroundperfil.jpg');
     background-position: center center;
     background-color: #0095c72c;
     border-radius: 16px;
@@ -197,11 +197,16 @@ main{
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    color: #48cae4;
     translate: 0% -70%;
 }
 .imgperfil{ 
+    background-image: url('imagens/imgperfilfundotransparente.png');
+    background-size: cover;
+    background-position: center center;
     width: 200px;
     height: 200px;
+    border: 2px solid var(--corbrilhante);
 }
 .infoperfil{
     width: 150px;
@@ -287,17 +292,18 @@ main{
 p.res{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: black;
+    color:var(--corbrilhante);
 }
 .tecarea{
     font-family: 'tec';
-    translate: -68% 0%;
+    translate: -40% 0%;
 }
 .tecnologias{
-    border: 1px solid black;
+    border: 2px solid var(--corbrilhante);
     border-radius: 5px;
     width: 50px;
     height: 50px;
+    background-color: #0095c7a4;
     translate: 0% 20%;
 }
 .btn-open-project-conteiner{
@@ -344,14 +350,16 @@ p.res{
     -webkit-transform: rotate(45deg);
 }
 .projetos-conteiner{
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-between;
     align-content:space-around;
     flex-wrap: wrap;
-    width: 99vw;
+    width: 99.3vw;
     padding: 5vw;
-    background-image: url('1c5a6a21a235ef660066650af80e12e4.jpg');
+    margin-top: 50px;
+    padding-top: 70px;
+    background-image: url('imagens/background\ Projetos\ conteiner.jpg');
     background-color: rgb(174, 229, 243);
     position: relative;
     top: 50%;
@@ -362,10 +370,8 @@ p.res{
 .style-conteiner{
     margin-top: 25px;
     margin-bottom: 50px;
-    background-image: url('');
-    background-position: center center;
-    background-size: cover;
     background-color: #0095c72c;
+    background-size: cover;
     border-radius: 16px;
     padding: 25px;
     width: 550px;
@@ -373,7 +379,33 @@ p.res{
     border:2px solid var(--corbrilhante);
     z-index: 0;
     animation: flutuar 2s linear infinite;
+    color: var(--corbrilhante);
 
+}
+
+.back-circulomagico{
+    background-image:url('imagens/background\ Projetos.avif');
+}
+.back-slide{
+    background-image:url('imagens/background\ Projetos.avif');
+}
+.back-jogodavelha{
+    background-image:url('imagens/background\ Projetos\ 2.avif');
+}
+.back-relogiojs{
+    background-image:url('imagens/background\ Projetos.avif');
+}
+.back-imc{
+    background-image:url('imagens/background\ Projetos.avif');
+}
+.back-cronometro{
+    background-image:url('imagens/background\ Projetos\ 2.avif');
+}
+.back-calculadora{
+    background-image:url('imagens/background\ Projetos\ 2.avif');
+}
+.back-relogiodigital{
+    background-image:url('imagens/background\ Projetos\ 2.avif');
 }
 .border-circulo{
     position: relative;
@@ -450,7 +482,7 @@ p.res{
     height: 100px;
     width: 100px;
     transform: perspective(100px) rotatex(180deg);
-    top: 34%;
+    top: 33.5%;
     left: 92%;
 }
 .border-ponta2::after{
@@ -530,8 +562,6 @@ p.res{
    top: 5%;
    left: 2%;
    width: 300px;
-   height: 400px;
-
    height: 280px;
 
    border-radius: 30px 10px 20px 0px;
@@ -557,8 +587,13 @@ p.res{
     height: 40px;
   &:hover{
     cursor: pointer;
-    color: #48CAE4;
+    color: var(--corbrilhante);
+    border-color: var(--corbrilhante);
+    background-color: #0095c78f;
   }
+}
+.btntec{
+    border:2px solid #48cae4; 
 }
 .infoprojeto{
     width: 150px;
@@ -569,6 +604,7 @@ p.res{
     position: absolute;
     margin-top: 40px;
     margin-left: 20px;
+    background-color: transparent;
 }
 .infoprojeto>ul{
     list-style: none;
@@ -576,6 +612,7 @@ p.res{
     font-family: 'tec';
     margin-top: 40px;
     margin-left: 40px;
+    background-color: transparent;
 }
 .htmlpercentage::before{
     content: '';
@@ -622,6 +659,7 @@ p.res{
     border: 1px solid var(--corpadrao);
     background-color: transparent;
     color: var(--corpadrao);
+    padding-bottom: 20px;
     width: 85px;
     height: 20px;
     translate: 0% 0%;
@@ -634,8 +672,10 @@ p.res{
     border-radius: 0px 0px 10px 0px;
 }
 .btnprojeto:hover{
-    box-shadow: inset  4px 4px 40px #03045E;
+    box-shadow:  4px 4px 10px #0095c7a1;
     color: var(--corbrilhante);
+    background-color: #0095c78e;
+    border:2px solid var(--corbrilhante);
    }
 .slide{
     background-image: url('imagens/imagemprojetoslide.png');
@@ -645,7 +685,7 @@ p.res{
     background-image: url('imagens/circulomagicoimg.png');
 }
 .calculadora{
-    background-image: url('imagens/imagemcalculadora.png');
+    background-image: url('imagens/imagemcalculadora.gif');
 }
 .jogodavelha{
     background-image: url('imagens/imagemjogodavelha.png');
@@ -658,9 +698,6 @@ p.res{
 }
 .relogiojs{
     background-image: url('imagens/imagemrelógiojs.png');
-}
-.parallax{
-    background-image: url('');
 }
 .imc{
     background-image: url('imagens/IMCimg.png');
