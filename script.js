@@ -97,7 +97,7 @@ for(let i=0 ;i < 8 ;i++){
         screenTec[i].style.display="block"; 
         btnTec[i].style.border="2px solid #48cae4"; 
 
-    screenTec[i].addEventListener('mouseleave',()=>{
+    screenTec[i].addEventListener('click',()=>{
         const screen=visualViewport.width;
         console.log(screen)
         if(screen <= 400){

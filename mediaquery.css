@@ -76,7 +76,7 @@
             width: 0;
         }
         to{
-            width: 13em;
+            width: 14em;
         }
     }
     .img-home{
@@ -121,7 +121,8 @@
     .projetos-conteiner{
         left: 0%;
         width: 100vw;
-        padding-top: 70px;
+        margin-top:180px;
+        padding-top: 80px;
     }
     .projeto{
         width: 300px;
