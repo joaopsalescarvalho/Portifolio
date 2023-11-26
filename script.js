@@ -39,7 +39,7 @@ buttonOpenProjects.addEventListener('click',()=>{
     buttonBackToTop.style.display='none';
     projetosConteiner.style.display='flex';
     setTimeout(()=>{
-    projetosConteiner.style.top='-100%';
+    projetosConteiner.style.top='-110%';
     window.scrollTo(0,0)
     },1)
     setTimeout(()=>{
@@ -78,7 +78,7 @@ for(let i=0 ;i < 8 ;i++){
         screenTec[i].style.display="none"; 
         btnTec[i].style.border="1px solid #0096C7";
 
-    screenDesc[i].addEventListener('mouseleave',()=>{
+    screenDesc[i].addEventListener('click',()=>{
         const screen=visualViewport.width;
         console.log(screen)
         if(screen <= 400){
@@ -162,5 +162,3 @@ function closePerfil(){
         perfil.style.display='none'
 },0)
 }
-
-window.onload = widthVerify

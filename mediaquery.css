@@ -30,7 +30,7 @@
        justify-content: center;
         top: 20%;
         left: 0%;
-        margin-top: 150px;
+        margin-top: 170px;
         padding-top: 70px;
     }
     .border-circulo{
@@ -42,7 +42,7 @@
         left: 90%;
     }
     .border-ponta2{
-        top: 34%;
+        top: 33.5%;
         left: 90%;
     }
     .border-ponta3{
@@ -76,11 +76,14 @@
             width: 0;
         }
         to{
-            width: 12.8em;
+            width: 13em;
         }
     }
     .img-home{
         translate: 0% -40%;
+    }
+    .info-home{
+        width: 0px;
     }
     .perfil-conteiner{
         scale: 0.7;
@@ -102,7 +105,7 @@
         left: 84%;
     }
     .border-ponta2{
-        top: 34%;
+        top: 33.5%;
         left: 84%;
     }
     .border-ponta2::after{
@@ -118,7 +121,7 @@
     .projetos-conteiner{
         left: 0%;
         width: 100vw;
-        padding-top: 40px;
+        padding-top: 70px;
     }
     .projeto{
         width: 300px;
@@ -177,40 +180,115 @@
     }
 }
 @media screen and (min-width: 700px) and (max-width: 992px){
-    main{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    .style-conteiner{
+        width: 400px;
     }
-    .img-home{
-        width: 500px; 
-        margin: 50px 0;
+    .border-circulo{
+        top: -20%;
+        left: -15%;
+    }
+    .border-ponta1{
+        top: -55%;
+        left: 88%;
+    }
+    .border-ponta2{
+        top: 33.5%;
+        left: 88%;
+    }
+    .border-ponta3{
+        top: 0%;
+        left: -16%;
     }
     .projetos-conteiner{
-        display: flex;
-       justify-content: center;
-        top: 20%;
-        left: 5%;
-    }
-    .style-conteiner{
-        width: 500px;
+        left: 0%;
+        width: 100vw;
+        padding-top: 100px;
     }
     .projeto{
-        width: 600px ;
+        width: 400px;
+    }
+    .btn-info{
+        height: 25px;
+        border: 2px solid #48cae4;
     }
     .imgprojeto{
-        width: 600px;
+        width: 300px;
+        translate: 0% 6%;
+    }
+    .infoprojeto{
+        position: absolute;
+        top: -8%;
+        left: 30%;
+        width: 150px;
+    }
+    .infoprojeto>ul{
+        position: absolute;
+        top: 0%;
+        left: -40%;
+        display: none;
+        padding: 15px;
+        border: 1px solid #48cae4;
+        background-color: #0095c72c;
+    }
+    .htmlpercentage::before{
+        top: 17%;
+        left: 2%;
+    }
+    .csspercentage::before{
+        top: 48%;
+        left: 2%;
+    }
+    .jspercentage::before{
+        top: 78%;
+        left: 2%;
+    }
+    .infoprojeto>p{
+        position: absolute;
+        top: 0%;
+        left: -40%;
+        padding: 10px;
+        border: 1px solid #48cae4;
+        background-color: #0095c72c;
+    }
+    .links{
+        top: 115%;
+        left: -20%;
+    }
+    .btnprojeto{
+        border: 2px solid #48cae4;
+        width: 85px;
+        padding-bottom: 20px;
+    }
+    .visibility{
+        border-radius: 0px 0px 0px 10px;
     }
 
 }
 @media screen and (min-width: 992px) and (max-width: 1150px){
+    .style-conteiner{
+        width: 450px;
+    }
     .projeto{
         width: 400px ;
     }
     .imgprojeto{
         width: 400px;
+    }
+    .border-circulo{
+        top: -20%;
+        left: -15%;
+    }
+    .border-ponta1{
+        top: -55%;
+        left: 90%;
+    }
+    .border-ponta2{
+        top: 33.5%;
+        left: 90%;
+    }
+    .border-ponta3{
+        top: 0%;
+        left: -15%;
     }
 
 }
